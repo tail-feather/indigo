@@ -106,6 +106,7 @@ $(DRIVER_A): $(DRIVER_O)
 	$(AR) $(ARFLAGS) $@ $^
 ifneq ($(SDK_LIB_SO),)
 	install -m 0644 $(SDK_LIB_SO) $(BUILD_LIB)
+	$(FIX_SDK_LIB_SO)
 ifeq ($(OS_DETECTED),Darwin)
 	install_name_tool -id $(BUILD_LIB)/$(notdir $(SDK_LIB_SO)) $(BUILD_LIB)/$(notdir $(SDK_LIB_SO))
 	$(FIX_SDK_LIB_SO)

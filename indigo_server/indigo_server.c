@@ -113,6 +113,7 @@
 #include "aux_sqm/indigo_aux_sqm.h"
 #include "focuser_dsd/indigo_focuser_dsd.h"
 #include "ccd_ptp/indigo_ccd_ptp.h"
+#include "ccd_pentax/indigo_ccd_pentax.h"
 #include "focuser_efa/indigo_focuser_efa.h"
 #include "aux_arteskyflat/indigo_aux_arteskyflat.h"
 #include "aux_flipflat/indigo_aux_flipflat.h"
@@ -194,6 +195,7 @@ driver_entry_point static_drivers[] = {
 #endif
 	indigo_ccd_iidc,
 	indigo_ccd_mi,
+	indigo_ccd_pentax,
 	indigo_ccd_ptp,
 	indigo_ccd_qhy,
 	indigo_ccd_qsi,
